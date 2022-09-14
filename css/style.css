@@ -214,8 +214,8 @@ h1 {
 }
 
 #productos img {
-    width: 300px;
-    height: 230px;
+    width: 200px;
+    height: 150px;
 }
 
 .itemProductos {
@@ -274,7 +274,7 @@ h1 {
 }
 
 #introPromociones img {
-    width: 350px;
+    width: 250px;
     padding: 10px;
 }
 
