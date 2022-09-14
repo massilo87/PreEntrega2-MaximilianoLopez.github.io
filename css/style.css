@@ -1,0 +1,389 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/*-------------------Imagenes Globales------------------------*/
+.logoLulus img {
+    width: auto;
+    height: 120px;
+}
+
+#pie ul li a img {
+    height: 30px;
+}
+
+.ayuda img {
+    height: 30px;
+}
+
+/* ------------------------------------------ */
+
+#encabezado {
+    grid-area: encabezado;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#introHome {
+    grid-area: titular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: 800;
+    color: rgb(250, 147, 12);
+} 
+
+#sectionHome {
+    grid-area: titular2;
+    background-image: url("../img/Impresion-3D.jpeg");
+    background-position: center;
+    opacity: 0.5;
+    text-align: center;
+    height: 200px;
+}
+
+#sectionImpresion {
+    grid-area: impresion;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    color: #000;
+    /*background-color: rgb(240, 240, 240);*/
+    font-size: medium;
+}
+
+#pie {
+    grid-area: pie;
+    background-color: rgb(250, 147, 12);
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#pie ul {
+    display: flex;
+}
+
+#pie li {
+    margin: 3%;
+    width: 100%;
+    list-style-type: none;
+}
+
+#pie h4 {
+    margin-left: 2%;
+    padding: 15px;
+    width: 100%;
+}
+
+
+#containerHome {
+    height: 100vh;
+    background-image: url("../img/fondito3.png");
+    background-repeat: initial;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 2fr 2fr auto;
+    gap: 15px;
+    grid-template-areas: 
+        "encabezado"
+        "titular"
+        "titular2"
+        "impresion"
+        "pie";
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+}
+
+.menuNav {
+    color: rgb(250, 147, 12);
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.menuNav:hover {
+    color: #000;
+    background-color: rgb(250, 147, 12);
+    text-shadow: black 0.5em 0.3em 0.4em;
+
+}
+
+#encabezado li {
+    display: inline-block;
+}
+
+/* --------------------HOME----------------------------- */
+
+/*#sectionHome {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}*/
+
+/*.foto img {
+    width: 400px;
+}*/
+
+#sectionHome h2 {
+    margin-top: 1%;
+    color: rgb(255, 255, 255);
+    text-shadow: black 0.2em 0.2em;
+}
+
+/*#sectionHome .parrafo {
+    margin-top: 1%;
+    width: 40%;
+}*/
+
+
+#sectionImpresion img {
+    width: 100%;
+    height: 80%;
+}
+
+.impresionItem {
+    color: #000;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    margin-top: 2%;
+    padding: 5px;
+    transition: all .5s;
+}
+
+.impresionItem a {
+    color: #000;
+    transition: all .5s;
+}
+
+
+.impresionItem:hover {
+    background-color: rgb(250, 147, 12);
+    height: 350px;
+    width: 450px;
+}
+/* --------------PRODUCTOS------------------------- */
+
+#tituloProductos {
+    grid-area: titular;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#productos {
+    grid-area: productos;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#containerProductos {
+    height: 100vh;
+    background-image: url("../img/fondito3.png");
+    background-repeat: initial;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 2fr auto;
+    gap: 15px;
+    grid-template-areas: 
+        "encabezado"
+        "titular"
+        "productos"
+        "pie";
+}
+
+#productos img {
+    width: 300px;
+    height: 230px;
+}
+
+.itemProductos {
+    text-align: center;
+    padding: 10px;
+}
+
+.itemProductos:hover {
+    background-color: rgb(250, 147, 12);
+}
+.itemProductos a {
+    text-decoration: none;
+    color: #721c05;
+    font-weight: 600;
+}
+
+/* ------------PROMOCIONES----------------------------- */
+
+#promocionados {
+    grid-area: titular;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}    
+
+#promocionados p {
+    color: rgb(114, 28, 5);
+    font-weight: 600;
+    width: 40%;
+    text-align: center;
+    margin: 2%;
+    font-size: large;
+}
+
+#introPromociones {
+    grid-area: promocionados;
+    display: flex;
+    gap: 20px;
+}
+
+#containerPromociones {
+    height: 100vh;
+    background-image: url("../img/fondito3.png");
+    background-repeat: initial;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 2fr auto;
+    gap: 15px;
+    grid-template-areas: 
+        "encabezado"
+        "titular"
+        "promocionados"
+        "pie";   
+}
+
+#introPromociones img {
+    width: 350px;
+    padding: 10px;
+}
+
+#introPromociones h4 {
+    text-align: center;
+    margin: 2%;
+    color: rgb(250, 147, 12);
+}
+
+.itemsDestacados {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.itemsPromocionados {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/* -----------------------SOBRE NOSOTROS-------------------------------- */
+
+#introSobreNosotros {
+    grid-area: titular;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    align-items: center;
+}
+
+#video {
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+
+#containerSobreNosotros {
+    height: 100vh;
+    background-image: url("../img/fondito3.png");
+    background-repeat: initial;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr 2fr auto;
+    gap: 15px;
+    grid-template-areas: 
+        "encabezado"
+        "titular"
+        "video"
+        "pie";
+}
+
+#introSobreNosotros p {
+    margin-top: 2%;
+    text-align: center;
+    width: 40%;
+    color: rgb(114, 28, 5);
+    font-weight: 600;
+    font-size: large;
+}
+
+/* ---------------------------CONTACTO--------------------------------- */
+
+.tituloContacto {
+    grid-area: titular;
+    text-align: center;
+}
+
+#formulario {
+    grid-area: formulario;
+    /*display: inline-block;
+    flex-flow: row nowrap;
+    justify-content: center;*/
+}
+
+.datos {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*.datos input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+  }
+  
+  .datos textarea {
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+  }*/
+
+#containerContacto {
+    height: 100vh;
+    background-image: url("../img/fondito3.png");
+    background-repeat: initial;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 2fr auto;
+    gap: 15px;
+    grid-template-areas: 
+        "encabezado"
+        "titular"
+        "formulario"
+        "pie";
+}
