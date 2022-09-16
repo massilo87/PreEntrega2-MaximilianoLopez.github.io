@@ -12,6 +12,10 @@
     height: 120px;
 }
 
+.logolulu {
+    height: 100px;
+    width: 150px;
+}
 #pie ul li a img {
     height: 30px;
 }
@@ -20,12 +24,22 @@
     height: 30px;
 }
 
+.logofooter {
+    height: 60px;
+    width: 80px;
+}
+
 /* ------------------------------------------ */
 
 #encabezado {
     grid-area: encabezado;
     display: flex;
     justify-content: space-evenly;
+}
+
+.headerr {
+    display: flex;
+    justify-items: space-between;
 }
 
 #introHome {
