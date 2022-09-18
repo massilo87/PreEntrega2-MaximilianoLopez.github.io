@@ -37,11 +37,6 @@
     justify-content: space-evenly;
 }
 
-.headerr {
-    display: flex;
-    justify-items: space-between;
-}
-
 #introHome {
     grid-area: titular;
     display: flex;
@@ -122,7 +117,7 @@ h1 {
     align-items: center;
 }
 
-.menuNav {
+.nav-link {
     color: rgb(250, 147, 12);
     text-decoration: none;
     border-radius: 20px;
@@ -131,10 +126,9 @@ h1 {
     transition: .5s;
 }
 
-.menuNav:hover {
+.nav-link:hover {
     color: #000;
     background-color: rgb(250, 147, 12);
-    text-shadow: black 0.5em 0.3em 0.4em;
 
 }
 
@@ -322,9 +316,9 @@ h1 {
 
 #video {
     grid-area: video;
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    margin: 2%;
+    margin: 2%;*/
 }
 
 
