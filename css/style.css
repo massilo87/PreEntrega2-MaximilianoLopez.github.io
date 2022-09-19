@@ -7,10 +7,10 @@
 
 
 /*-------------------Imagenes Globales------------------------*/
-.logoLulus img {
+/*.logoLulus img {
     width: auto;
     height: 120px;
-}
+}*/
 
 .logolulu {
     height: 100px;
@@ -128,8 +128,7 @@ h1 {
 
 .nav-link:hover {
     color: #000;
-    background-color: rgb(250, 147, 12);
-
+    background-color: rgb(250, 147, 12, 0.6);
 }
 
 #encabezado li {
@@ -223,16 +222,20 @@ h1 {
 
 #productos img {
     width: 200px;
-    height: 150px;
+    height: 150px; 
 }
 
 .itemProductos {
     text-align: center;
     padding: 10px;
+    transition: all .5s;
 }
 
 .itemProductos:hover {
-    background-color: rgb(250, 147, 12);
+    background-color: rgb(250, 147, 12, 0.6);
+    width: 300px;
+    padding: 20px;
+    border-radius:0.5em;
 }
 .itemProductos a {
     text-decoration: none;
@@ -316,9 +319,6 @@ h1 {
 
 #video {
     grid-area: video;
-    /*display: flex;
-    justify-content: center;
-    margin: 2%;*/
 }
 
 
@@ -340,7 +340,7 @@ h1 {
 #introSobreNosotros p {
     margin-top: 2%;
     text-align: center;
-    width: 40%;
+    width: 50%;
     color: rgb(114, 28, 5);
     font-weight: 600;
     font-size: large;

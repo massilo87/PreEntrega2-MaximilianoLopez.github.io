@@ -6,33 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promociones</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
     <div id="containerPromociones">
-
-        
-        <header id="encabezado">
-            <div class="logoLulus">
-                <a href="../index.html">
-                    <img src="../img/logo (9).png" alt="logo">
-                </a>
-            </div>     
-
-            <div class="navegacion">
-
-                <nav>
-                    <ul>
-                        <li><a href="../index.html" target="_self" class="menuNav">Home</a></li>
-                        <li><a href="./productos.html" target="_self" class="menuNav">Productos</a></li>
-                        <li><a href="./promociones.html" target="_self" class="menuNav">Promociones</a></li>
-                        <li><a href="./sobreNosotros.html" target="_self" class="menuNav">Sobre Nosotros</a></li>
-                        <li><a href="./contacto.html" target="_self" class="menuNav">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>     
-                
-        </header>
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="offset-1 container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img src="../img/logo (9).png" alt="logo" class="logolulu"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offset-4 collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/promociones.html">Promociones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/sobreNosotros.html">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>    
 
         <section id="promocionados">
             <h1>Productos destacados y promociones</h1>
@@ -41,7 +53,7 @@
 
         <main id="introPromociones">
             <div>
-                <h4>Destacados del mes</h4>
+                <h4 class="animate__animated animate__backInLeft">Destacados del mes</h4>
                 <div class="itemsDestacados">
                     <a href="#"><img src="../img/223000-15665430.jpg" alt="destac1">
                     </a>
@@ -56,7 +68,7 @@
             </div>
             
             <div>
-                <h4>Nuestras promos</h4>
+                <h4 class="animate__animated animate__backInRight">Nuestras promos</h4>
                 <div class="itemsPromocionados">
                     <a href="#"><img src="../img/223000-15665430.jpg" alt="promoc1">
                     </a>
@@ -71,43 +83,67 @@
             </div>
         </main>
 
+        <footer class="bg-light text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: redes sociales -->
+                <section class="mb-4">
 
+                    <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #3b5998;"
+                    href="https://www.facebook.com/"
+                    role="button"
+                    target="blank"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
+                
+                    <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #55acee;"
+                    href="https://twitter.com/?lang=es"
+                    role="button"
+                    target="blank"
+                    ><i class="fab fa-twitter"></i
+                    ></a>
+                
+                    <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #dd4b39;"
+                    href="https://www.google.com.uy/"
+                    role="button"
+                    target="blank"
+                    ><i class="fab fa-google"></i
+                    ></a>
+                
+                    <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #ac2bac;"
+                    href="https://www.instagram.com/"
+                    role="button"
+                    target="blank"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
 
+                    <a
+                    class="btn text-white btn-floating m-1"
+                    style="background-color: #0082ca;"
+                    href="https://uy.linkedin.com/"
+                    role="button"
+                    target="blank"
+                    ><i class="fab fa-linkedin-in"></i>
+                    </a>  
 
-
-        <footer id="pie">
-            <div>
-                <h4>Nuestras redes</h4>
-        
-                <ul>
-            
-                    <li><a href="https://facebook.com" target="_blank">
-                        <img src="../img/facebook.png" alt="fb">
-                    </a></li>
-                    <li><a href="https://instagram.com" target="blank">
-                        <img src="../img/instagram.png" alt="insta">
-                    </a></li>
-                    <li><a href="https://whatsapp.com" target="_blank">
-                        <img src="../img/whatsapp (1).png" alt="wpp">
-                    </a></li>
-                    <li><a href="https://web.telegram.org" target="_blank">
-                        <img src="../img/telegram.png" alt="tele">
-                    </a></li>
-            
-                </ul>
+                </section>
             </div>
 
-            <div class="copy">
-                <p>&copy; 2022</p>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <a class="text-white offset-4" href="#/">© 2022 Copyright: Proyecto de Maximiliano Lopez</a>
+                <a href="#" class="offset-lg-4 ayuda"><img src="../img/pregunta.png" alt="ayuda"></a>
             </div>
-        
             
-            <div class="ayuda">
-                <a href="#">
-                    <img src="../img/pregunta.png" alt="ayuda">
-                </a>
-            </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
