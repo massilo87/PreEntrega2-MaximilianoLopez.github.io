@@ -27,10 +27,9 @@
 
 /* ------------------------------------------ */
 
-#encabezado {
+#header {
     grid-area: encabezado;
-    display: flex;
-    justify-content: space-evenly;
+  
 }
 
 #introHome {
@@ -55,41 +54,14 @@ h1 {
     height: 200px;
 }
 
-#sectionImpresion {
+.contenedorimpresion {
     grid-area: impresion;
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
-    align-items: center;
-    color: #000;
-    font-size: medium;
 }
 
-#pie {
+footer {
     grid-area: pie;
-    background-color: rgb(250, 147, 12);
-    color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
 
-#pie ul {
-    display: flex;
 }
-
-#pie li {
-    margin: 3%;
-    width: 100%;
-    list-style-type: none;
-}
-
-#pie h4 {
-    margin-left: 2%;
-    padding: 15px;
-    width: 100%;
-}
-
 
 #containerHome {
     height: 100vh;
@@ -107,27 +79,12 @@ h1 {
         "pie";
 }
 
-.navegacion {
-    display: flex;
-    align-items: center;
-}
-
 .nav-link {
-    color: rgb(250, 147, 12);
-    text-decoration: none;
     border-radius: 20px;
-    padding: 10px;
-    font-weight: 600;
-    transition: .5s;
 }
 
 .nav-link:hover {
-    color: #000;
     background-color: rgb(250, 147, 12, 0.6);
-}
-
-#encabezado li {
-    display: inline-block;
 }
 
 /* --------------------HOME----------------------------- */
@@ -138,32 +95,6 @@ h1 {
     text-shadow: black 0.2em 0.2em;
 }
 
-#sectionImpresion img {
-    width: 100%;
-    height: 80%;
-}
-
-.impresionItem {
-    color: #000;
-    height: 300px;
-    width: 400px;
-    text-align: center;
-    margin-top: 2%;
-    padding: 5px;
-    transition: all .5s;
-}
-
-.impresionItem a {
-    color: #000;
-    transition: all .5s;
-}
-
-
-.impresionItem:hover {
-    background-color: rgb(250, 147, 12);
-    height: 350px;
-    width: 450px;
-}
 /* --------------PRODUCTOS------------------------- */
 
 #tituloProductos {
@@ -294,7 +225,6 @@ h1 {
 
 #video {
     grid-area: video;
-    justify-items: center;
 }
 
 
@@ -315,7 +245,6 @@ h1 {
 
 #introSobreNosotros p {
     margin-top: 2%;
-    text-align: center;
     color: rgb(114, 28, 5);
     font-weight: 600;
     font-size: large;
@@ -332,15 +261,6 @@ h1 {
     grid-area: formulario;
 
 }
-
-.datos {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
 #containerContacto {
     height: 100vh;
