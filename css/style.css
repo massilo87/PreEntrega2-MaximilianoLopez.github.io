@@ -319,6 +319,7 @@ h1 {
 
 #video {
     grid-area: video;
+    justify-items: center;
 }
 
 
@@ -340,11 +341,14 @@ h1 {
 #introSobreNosotros p {
     margin-top: 2%;
     text-align: center;
-    width: 50%;
     color: rgb(114, 28, 5);
     font-weight: 600;
     font-size: large;
 }
+
+/*#video {
+    margin: auto;
+}*/
 
 /* ---------------------------CONTACTO--------------------------------- */
 
