@@ -83,9 +83,6 @@ footer {
     border-radius: 20px;
 }
 
-.nav-link:hover {
-    background-color: rgb(250, 147, 12, 0.6);
-}
 
 /* --------------------HOME----------------------------- */
 
@@ -315,4 +312,10 @@ footer {
 
     }
 
+}
+
+@media (min-width: 769px) {
+    .nav-link:hover {
+        background-color: rgb(250, 147, 12, 0.6);
+    }
 }
