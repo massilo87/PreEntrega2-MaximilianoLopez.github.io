@@ -12,19 +12,23 @@
     height: 100px;
     width: 150px;
 }
-#pie ul li a img {
+/* #pie ul li a img {
     height: 30px;
-}
+} */
 
 .ayuda img {
     height: 30px;
 }
 
-.logofooter {
+/*.logofooter {
     height: 60px;
     width: 80px;
-}
+}*/
 
+
+body {
+    background-image: url("../img/fondito3.png");
+}
 /* ------------------------------------------ */
 
 #header {
@@ -94,7 +98,7 @@ footer {
 
 /* --------------PRODUCTOS------------------------- */
 
-#tituloProductos {
+/*#tituloProductos {
     grid-area: titular;
     padding: 10px;
     display: flex;
@@ -125,7 +129,7 @@ footer {
         "pie";
 }
 
-#productos img {
+/*#productos img {
     width: 190px;
     height: 130px; 
 }
@@ -139,13 +143,25 @@ footer {
 .itemProductos:hover {
     background-color: rgb(250, 147, 12, 0.6);
     border-radius:0.5em;
-}
-.itemProductos a {
+}*/
+#catalogo a {
     text-decoration: none;
-    color: #721c05;
+    color: rgb(250, 147, 12);
     font-weight: 600;
 }
+#catalogo img {
+    width: 100%;
+    height: 250px;
+}
 
+#catalogo .col-lg-3 {
+    padding: 25px;
+}
+
+#catalogo img:hover {
+    border: 5px solid rgb(250, 147, 12);
+    border-radius: 0.5em;
+}
 /* ------------PROMOCIONES----------------------------- */
 
 #promocionados {
@@ -208,6 +224,10 @@ footer {
     display:flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+}
+
+main h4 {
+    color: rgb(250, 147, 12);
 }
 
 /* -----------------------SOBRE NOSOTROS-------------------------------- */
