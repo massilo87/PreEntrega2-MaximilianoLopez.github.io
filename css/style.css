@@ -98,7 +98,7 @@ footer {
 
 /* --------------PRODUCTOS------------------------- */
 
-/*#tituloProductos {
+#tituloProductos {
     grid-area: titular;
     padding: 10px;
     display: flex;
@@ -129,7 +129,7 @@ footer {
         "pie";
 }
 
-/*#productos img {
+#productos img {
     width: 190px;
     height: 130px; 
 }
@@ -141,10 +141,11 @@ footer {
 }
 
 .itemProductos:hover {
-    background-color: rgb(250, 147, 12, 0.6);
+    background-color: rgb(180, 180, 180);
     border-radius:0.5em;
-}*/
-#catalogo a {
+    color: black;
+}
+#productos a {
     text-decoration: none;
     color: rgb(250, 147, 12);
     font-weight: 600;
@@ -161,6 +162,10 @@ footer {
 #catalogo img:hover {
     border: 5px solid rgb(250, 147, 12);
     border-radius: 0.5em;
+}
+
+.itemProductos p {
+    color: rgb(250, 147, 12);
 }
 /* ------------PROMOCIONES----------------------------- */
 
@@ -203,7 +208,7 @@ footer {
         "pie";   
 }
 
-/*#introPromociones img {
+#introPromociones img {
     width: 250px;
     padding: 10px;
 }
@@ -303,7 +308,7 @@ main p {
 
 /* --------------MEDIA QUERIES--------------- */
 
-/*@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
 
     #productos img {
 
@@ -313,10 +318,10 @@ main p {
 
     }
 
-}*/
+}
 
  
-/*@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 
     #productos img {
 
@@ -333,16 +338,42 @@ main p {
 
     #productos img {
 
-        width: 280px;
+        width: 395px;
 
-        height: 180px;
+        height: 295px;
 
     }
 
-}*/
+}
 
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
     .nav-link:hover {
         background-color: rgb(250, 147, 12, 0.6);
+    }
+}
+
+@media (max-width: 756px) {
+    .ayuda img {
+        height: 20px;
+    }
+}
+
+@media (max-width: 756px) {
+    .ayuda a span {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    #introPromociones img {
+        width: 160px;
+        padding: 1px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #introPromociones img {
+        width: 310px;
+        padding: 1px;
     }
 }
