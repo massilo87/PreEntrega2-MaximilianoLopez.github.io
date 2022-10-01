@@ -12,18 +12,12 @@
     height: 100px;
     width: 150px;
 }
-/* #pie ul li a img {
-    height: 30px;
-} */
+
 
 .ayuda img {
     height: 30px;
 }
 
-/*.logofooter {
-    height: 60px;
-    width: 80px;
-}*/
 
 
 body {
@@ -55,7 +49,7 @@ h1 {
     background-position: center;
     opacity: 0.5;
     text-align: center;
-    height: 200px;
+    height: 300px;
 }
 
 .contenedorimpresion {
@@ -143,25 +137,11 @@ footer {
 .itemProductos:hover {
     background-color: rgb(180, 180, 180);
     border-radius:0.5em;
-    color: black;
 }
 #productos a {
     text-decoration: none;
     color: rgb(250, 147, 12);
     font-weight: 600;
-}
-#catalogo img {
-    width: 100%;
-    height: 250px;
-}
-
-#catalogo .col-lg-3 {
-    padding: 25px;
-}
-
-#catalogo img:hover {
-    border: 5px solid rgb(250, 147, 12);
-    border-radius: 0.5em;
 }
 
 .itemProductos p {
@@ -169,29 +149,23 @@ footer {
 }
 /* ------------PROMOCIONES----------------------------- */
 
-/*#promocionados {
+#promocionados {
     grid-area: titular;
     display: flex;
     flex-direction: column;
     padding: 10px;
-    justify-content: center;
-    align-items: center;
-}  */  
+} 
 
-/*#promocionados p {
-    color: rgb(209, 118, 0);
+#promocionados p {
+    color: rgb(255, 102, 0);
     font-weight: 600;
-    width: 40%;
-    text-align: center;
     margin: 2%;
     font-size: large;
 }
 
 #introPromociones {
     grid-area: promocionados;
-    display: flex;
-    gap: 20px;
-}*/
+}
 
 #containerPromociones {
     height: 100vh;
@@ -219,6 +193,11 @@ footer {
     color: rgb(250, 147, 12);
 }
 
+#introPromociones a img:hover {
+    border-radius: 25px;
+    border: 5px solid rgb(250, 147, 12);
+}
+
 .itemsDestacados {
     display:flex;
     flex-flow: row wrap;
@@ -229,7 +208,7 @@ footer {
     display:flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-}*/
+}
 
 main h4 {
     color: rgb(250, 147, 12);
@@ -250,12 +229,35 @@ main p {
     flex-direction: column;
     margin: 2%;
     align-items: center;
+    text-align: center;
 }
 
-#video {
-    grid-area: video;
+.ubicacion {
+    grid-area: ubicacion;
+    text-align: center;
 }
 
+.ubicacion iframe {
+    width: 50%;
+    height: auto;
+    
+}
+
+.ubicacion p {
+    font-size: large;
+    font-weight: 600;
+    color: rgb(255, 102, 0);
+    width: 100%;
+    padding: 1%;
+}
+.zorro {    
+    margin-top: 5%;  
+}
+
+.zorro img {
+    width: 25%;
+    height: auto;
+}
 
 #containerSobreNosotros {
     height: 100vh;
@@ -263,20 +265,21 @@ main p {
     background-repeat: repeat;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 2fr 2fr auto;
+    grid-template-rows: auto 2fr 1fr auto auto;
     gap: 15px;
     grid-template-areas: 
         "encabezado"
         "titular"
-        "video"
+        "ubicacion"
         "pie";
 }
 
 #introSobreNosotros p {
     margin-top: 2%;
-    color: rgb(209, 118, 0);
-    font-weight: 600;
+    color: rgb(255, 102, 0);
+    font-weight: 700;
     font-size: large;
+    width: 50%;
 }
 
 /* ---------------------------CONTACTO--------------------------------- */
@@ -375,5 +378,11 @@ main p {
     #introPromociones img {
         width: 310px;
         padding: 1px;
+    }
+}
+
+@media (max-width: 768px) {
+    .zorro {
+        flex-direction: column;
     }
 }
