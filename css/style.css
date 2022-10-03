@@ -1,4 +1,4 @@
-* {
+* { /*  */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,42 +8,42 @@
 
 /*-------------------Imagenes Globales------------------------*/
 
-.logolulu {
+.logolulu { /*  */
     height: 100px;
     width: 150px;
 }
 
 
-.ayuda img {
+.ayuda img { /*  */
     height: 30px;
 }
 
 
 
-body {
+body { /*  */
     background-image: url("../img/fondito3.png");
 }
 /* ------------------------------------------ */
 
-#header {
+#header { /*  */
     grid-area: encabezado;
   
 }
 
-#introHome {
+#introHome { /* *** */
     grid-area: titular;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h1 {
+h1 { /*  */
     font-size: xx-large;
     font-weight: 800;
     color: rgb(250, 147, 12);
 } 
 
-#sectionHome {
+#sectionHome { /* *** */
     grid-area: titular2;
     background-image: url("../img/Impresion-3D.jpeg");
     background-position: center;
@@ -52,16 +52,16 @@ h1 {
     height: 300px;
 }
 
-.contenedorimpresion {
+.contenedorimpresion { /* *** */
     grid-area: impresion;
 }
 
-footer {
+footer { /* *** */
     grid-area: pie;
 
 }
 
-#containerHome {
+#containerHome { /* *** */
     height: 100vh;
     background-image: url("../img/fondito3.png");
     background-repeat: repeat;
@@ -77,14 +77,14 @@ footer {
         "pie";
 }
 
-.nav-link {
+.nav-link { /* *** */
     border-radius: 20px;
 }
 
 
 /* --------------------HOME----------------------------- */
 
-#sectionHome h2 {
+#sectionHome h2 { /* *** */
     margin-top: 1%;
     color: rgb(255, 255, 255);
     text-shadow: black 0.2em 0.2em;
@@ -92,7 +92,7 @@ footer {
 
 /* --------------PRODUCTOS------------------------- */
 
-#tituloProductos {
+#tituloProductos { /* **** */
     grid-area: titular;
     padding: 10px;
     display: flex;
@@ -100,7 +100,7 @@ footer {
     align-items: center;
 }
 
-#productos {
+#productos { /* **** */
     grid-area: productos;
     display: flex;
     flex-flow: row wrap;
@@ -108,7 +108,7 @@ footer {
     justify-content: center;
 }
 
-#containerProductos {
+#containerProductos { /* **** */
     height: 100vh;
     background-image: url("../img/fondito3.png");
     background-repeat: repeat;
@@ -123,51 +123,51 @@ footer {
         "pie";
 }
 
-#productos img {
+#productos img { /* **** */
     width: 190px;
     height: 130px; 
 }
 
-.itemProductos {
+.itemProductos { /* **** */
     text-align: center;
     padding: 10px;
     transition: all .5s;
 }
 
-.itemProductos:hover {
+.itemProductos:hover { /* **** */
     background-color: rgb(180, 180, 180);
     border-radius:0.5em;
 }
-#productos a {
+#productos a { /* **** */
     text-decoration: none;
     color: rgb(250, 147, 12);
     font-weight: 600;
 }
 
-.itemProductos p {
+.itemProductos p { /* **** */
     color: rgb(250, 147, 12);
 }
 /* ------------PROMOCIONES----------------------------- */
 
-#promocionados {
+#promocionados { /* ***** */
     grid-area: titular;
     display: flex;
     flex-direction: column;
     padding: 10px;
 } 
 
-#promocionados p {
+#promocionados p { /* ***** */
     color: rgb(255, 102, 0);
     font-weight: 600;
     margin: 2%;
     font-size: large;
 }
 
-#introPromociones {
+#introPromociones { /* ***** */
     grid-area: promocionados;
 }
 
-#containerPromociones {
+#containerPromociones { /* ***** */
     height: 100vh;
     background-image: url("../img/fondito3.png");
     background-repeat: repeat;
@@ -182,48 +182,49 @@ footer {
         "pie";   
 }
 
-#introPromociones img {
+#introPromociones img { /* ***** */
     width: 250px;
     padding: 10px;
 }
 
-#introPromociones h4 {
+#introPromociones h4 { /* ***** */
     text-align: center;
     margin: 2%;
     color: rgb(250, 147, 12);
+    font-weight: 600;
 }
 
-#introPromociones a img:hover {
+#introPromociones a img:hover { /* ***** */
     border-radius: 25px;
     border: 5px solid rgb(250, 147, 12);
 }
 
-.itemsDestacados {
+.itemsDestacados { /* ***** */
     display:flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
-.itemsPromocionados {
+.itemsPromocionados { /* ***** */
     display:flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
-main h4 {
+/*main h4 {
     color: rgb(250, 147, 12);
     font-weight: 600;
-}
+}*/
 
-main p {
+/*main p {
     color: rgb(209, 118, 0);
     font-weight: 600;
     font-size: large;
-}
+}*/
 
 /* -----------------------SOBRE NOSOTROS-------------------------------- */
 
-#introSobreNosotros {
+#introSobreNosotros { /* ****** */
     grid-area: titular;
     display: flex;
     flex-direction: column;
@@ -232,34 +233,34 @@ main p {
     text-align: center;
 }
 
-.ubicacion {
+.ubicacion { /* ****** */
     grid-area: ubicacion;
     text-align: center;
 }
 
-.ubicacion iframe {
+.ubicacion iframe { /* ****** */
     width: 50%;
     height: auto;
     
 }
 
-.ubicacion p {
+.ubicacion p { /* ****** */
     font-size: large;
     font-weight: 600;
     color: rgb(255, 102, 0);
     width: 100%;
     padding: 1%;
 }
-.zorro {    
+.zorro { /* ****** */   
     margin-top: 5%;  
 }
 
-.zorro img {
+.zorro img { /* ****** */
     width: 25%;
     height: auto;
 }
 
-#containerSobreNosotros {
+#containerSobreNosotros { /* ****** */
     height: 100vh;
     background-image: url("../img/fondito3.png");
     background-repeat: repeat;
@@ -274,7 +275,7 @@ main p {
         "pie";
 }
 
-#introSobreNosotros p {
+#introSobreNosotros p { /* ****** */
     margin-top: 2%;
     color: rgb(255, 102, 0);
     font-weight: 700;
@@ -284,17 +285,17 @@ main p {
 
 /* ---------------------------CONTACTO--------------------------------- */
 
-.tituloContacto {
+.tituloContacto { /* ******* */
     grid-area: titular;
     text-align: center;
 }
 
-#formulario {
+#formulario { /* ******* */
     grid-area: formulario;
 
 }
 
-#containerContacto {
+#containerContacto { /* ******* */
     height: 100vh;
     background-image: url("../img/fondito3.png");
     background-repeat: repeat;

@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* -------------------Globales------------------------ */
+
+$colorPrincipal: rgb(250, 147, 12);
+$colorTexto:  rgb(255, 102, 0);
+
+body {
+    background-image: url("../img/fondito3.png");
+}
+
+.logolulu {
+    height: 100px;
+    width: 150px;
+}
+
+.ayuda img {
+    height: 30px;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: 800;
+    color: $colorPrincipal;
+}
+
+@import "pages";
+
+@import "responsive";

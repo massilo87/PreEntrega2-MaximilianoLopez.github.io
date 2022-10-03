@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* -------------------Globales------------------------ */
+body {
+  background-image: url("../img/fondito3.png");
+}
+
+.logolulu {
+  height: 100px;
+  width: 150px;
+}
+
+.ayuda img {
+  height: 30px;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: rgb(250, 147, 12);
+}
+
+/*------------------------HOME------------------------------------- */
+#containerHome {
+  height: 100vh;
+  background-repeat: repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 2fr 2fr auto;
+  gap: 15px;
+  grid-template-areas: "encabezado" "titular" "titular2" "impresion" "pie";
+}
+#containerHome .header {
+  grid-area: encabezado;
+}
+#containerHome #introHome {
+  grid-area: titular;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#containerHome #sectionHome {
+  grid-area: titular2;
+  background-image: url("../img/Impresion-3D.jpeg");
+  background-position: center;
+  opacity: 0.5;
+  text-align: center;
+  height: 300px;
+}
+#containerHome #sectionHome h2 {
+  margin-top: 1%;
+  color: rgb(255, 255, 255);
+  text-shadow: black 0.2em 0.2em;
+}
+#containerHome .contenedorimpresion {
+  grid-area: impresion;
+}
+#containerHome .nav-link {
+  border-radius: 20px;
+}
+#containerHome footer {
+  grid-area: pie;
+}
+
+/* --------------------PRODUCTOS----------------------------- */
+#containerProductos {
+  height: 100vh;
+  background-repeat: repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 2fr auto;
+  gap: 15px;
+  grid-template-areas: "encabezado" "titular" "productos" "pie";
+}
+#containerProductos .header {
+  grid-area: encabezado;
+}
+#containerProductos #tituloProductos {
+  grid-area: titular;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#containerProductos #productos {
+  grid-area: productos;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  justify-content: center;
+}
+#containerProductos #productos img {
+  width: 190px;
+  height: 130px;
+}
+#containerProductos #productos a {
+  text-decoration: none;
+  color: rgb(250, 147, 12);
+  font-weight: 600;
+}
+#containerProductos #productos .itemProductos p {
+  color: rgb(250, 147, 12);
+}
+#containerProductos #productos .itemProductos {
+  text-align: center;
+  padding: 10px;
+  transition: all 0.5s;
+}
+#containerProductos #productos .itemProductos:hover {
+  background-color: rgb(180, 180, 180);
+  border-radius: 0.5em;
+}
+#containerProductos footer {
+  grid-area: pie;
+}
+
+/* ------------PROMOCIONES----------------------------- */
+#containerPromociones {
+  height: 100vh;
+  background-repeat: repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 2fr auto;
+  gap: 15px;
+  grid-template-areas: "encabezado" "titular" "promocionados" "pie";
+}
+#containerPromociones .header {
+  grid-area: encabezado;
+}
+#containerPromociones #promocionados {
+  grid-area: titular;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+#containerPromociones #promocionados p {
+  color: rgb(255, 102, 0);
+  font-weight: 600;
+  margin: 2%;
+  font-size: large;
+}
+#containerPromociones #introPromociones {
+  grid-area: promocionados;
+}
+#containerPromociones #introPromociones img {
+  width: 250px;
+  padding: 10px;
+}
+#containerPromociones #introPromociones img:hover {
+  border-radius: 25px;
+  border: 5px solid rgb(250, 147, 12);
+}
+#containerPromociones #introPromociones .itemsDestacados {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+#containerPromociones #introPromociones .itemsPromocionados {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+#containerPromociones #introPromociones h4 {
+  text-align: center;
+  margin: 2%;
+  color: rgb(250, 147, 12);
+  font-weight: 600;
+}
+#containerPromociones footer {
+  grid-area: pie;
+}
+
+/* -----------------------SOBRE NOSOTROS-------------------------------- */
+#containerSobreNosotros {
+  height: 100vh;
+  background-repeat: repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 2fr 1fr auto auto;
+  gap: 15px;
+  grid-template-areas: "encabezado" "titular" "ubicacion" "pie";
+}
+#containerSobreNosotros .header {
+  grid-area: encabezado;
+}
+#containerSobreNosotros #introSobreNosotros {
+  grid-area: titular;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  align-items: center;
+  text-align: center;
+}
+#containerSobreNosotros #introSobreNosotros p {
+  margin-top: 2%;
+  color: rgb(250, 147, 12);
+  width: 50%;
+  font-size: large;
+  font-weight: 700;
+}
+#containerSobreNosotros .ubicacion {
+  grid-area: ubicacion;
+  text-align: center;
+}
+#containerSobreNosotros .ubicacion iframe {
+  width: 50%;
+  height: auto;
+}
+#containerSobreNosotros .ubicacion p {
+  color: rgb(255, 102, 0);
+  width: 100%;
+  padding: 1%;
+  font-size: large;
+  font-weight: 600;
+}
+#containerSobreNosotros .ubicacion .zorro {
+  margin-top: 5%;
+}
+#containerSobreNosotros .ubicacion .zorro img {
+  width: 25%;
+  height: auto;
+}
+#containerSobreNosotros footer {
+  grid-area: pie;
+}
+
+/* ---------------------------CONTACTO--------------------------------- */
+#containerContacto {
+  height: 100vh;
+  background-repeat: repeat;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 2fr auto;
+  gap: 15px;
+  grid-template-areas: "encabezado" "titular" "formulario" "pie";
+}
+#containerContacto .header {
+  grid-area: encabezado;
+}
+#containerContacto .tituloContacto {
+  grid-area: titular;
+  text-align: center;
+}
+#containerContacto #formulario {
+  grid-area: formulario;
+}
+#containerContacto footer {
+  grid-area: pie;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #productos img {
+    width: 225px;
+    height: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  #productos img {
+    width: 220px;
+    height: 150px;
+  }
+}
+@media (min-width: 1880px) {
+  #productos img {
+    width: 395px;
+    height: 295px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-link:hover {
+    background-color: rgba(250, 147, 12, 0.6);
+  }
+}
+@media (max-width: 756px) {
+  .ayuda img {
+    height: 20px;
+  }
+}
+@media (max-width: 756px) {
+  .ayuda a span {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #introPromociones img {
+    width: 160px;
+    padding: 1px;
+  }
+}
+@media (min-width: 1200px) {
+  #introPromociones img {
+    width: 310px;
+    padding: 1px;
+  }
+}
+@media (max-width: 768px) {
+  .zorro {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
