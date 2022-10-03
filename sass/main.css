@@ -25,6 +25,10 @@ h1 {
   color: rgb(250, 147, 12);
 }
 
+.nav-link {
+  border-radius: 20px;
+}
+
 /*------------------------HOME------------------------------------- */
 #containerHome {
   height: 100vh;
@@ -59,9 +63,6 @@ h1 {
 }
 #containerHome .contenedorimpresion {
   grid-area: impresion;
-}
-#containerHome .nav-link {
-  border-radius: 20px;
 }
 #containerHome footer {
   grid-area: pie;
@@ -254,19 +255,19 @@ h1 {
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-  #productos img {
+  .productos img {
     width: 225px;
     height: 150px;
   }
 }
 @media (min-width: 1200px) {
-  #productos img {
+  .productos img {
     width: 220px;
     height: 150px;
   }
 }
 @media (min-width: 1880px) {
-  #productos img {
+  .productos img {
     width: 395px;
     height: 295px;
   }
@@ -287,13 +288,13 @@ h1 {
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  #introPromociones img {
+  .introPromociones img {
     width: 160px;
     padding: 1px;
   }
 }
 @media (min-width: 1200px) {
-  #introPromociones img {
+  .introPromociones img {
     width: 310px;
     padding: 1px;
   }

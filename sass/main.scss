@@ -29,6 +29,10 @@ h1 {
     color: $colorPrincipal;
 }
 
+.nav-link {
+    border-radius: 20px;
+}
+
 @import "pages";
 
-@import "responsive";
+@import "mediaQueries";
