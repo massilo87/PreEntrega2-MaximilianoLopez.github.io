@@ -18,14 +18,14 @@
         grid-area: encabezado;
     }
 
-    #introHome {
+    .introHome {
         grid-area: titular;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    #sectionHome {
+    .sectionHome {
         grid-area: titular2;
         background-image: url("../img/Impresion-3D.jpeg");
         background-position: center;
@@ -73,7 +73,7 @@
         grid-area: encabezado;
     }
 
-    #tituloProductos {
+    .tituloProductos {
         grid-area: titular;
         padding: 10px;
         display: flex;
@@ -81,7 +81,7 @@
         align-items: center;
     }
 
-    #productos {
+    .productos {
         grid-area: productos;
         display: flex;
         flex-flow: row wrap;
@@ -143,7 +143,7 @@
         grid-area: encabezado;
     }
 
-    #promocionados {
+    .promocionados {
         grid-area: titular;
         display: flex;
         flex-direction: column;
@@ -158,7 +158,7 @@
 
     }
 
-    #introPromociones {
+    .introPromociones {
         grid-area: promocionados;
         
         img {
@@ -217,7 +217,7 @@
         grid-area: encabezado;
     }
 
-    #introSobreNosotros {
+    .introSobreNosotros {
         grid-area: titular;
         display: flex;
         flex-direction: column;

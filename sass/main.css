@@ -38,13 +38,13 @@ h1 {
 #containerHome .header {
   grid-area: encabezado;
 }
-#containerHome #introHome {
+#containerHome .introHome {
   grid-area: titular;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#containerHome #sectionHome {
+#containerHome .sectionHome {
   grid-area: titular2;
   background-image: url("../img/Impresion-3D.jpeg");
   background-position: center;
@@ -52,7 +52,7 @@ h1 {
   text-align: center;
   height: 300px;
 }
-#containerHome #sectionHome h2 {
+#containerHome .sectionHome h2 {
   margin-top: 1%;
   color: rgb(255, 255, 255);
   text-shadow: black 0.2em 0.2em;
@@ -80,38 +80,38 @@ h1 {
 #containerProductos .header {
   grid-area: encabezado;
 }
-#containerProductos #tituloProductos {
+#containerProductos .tituloProductos {
   grid-area: titular;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#containerProductos #productos {
+#containerProductos .productos {
   grid-area: productos;
   display: flex;
   flex-flow: row wrap;
   gap: 20px;
   justify-content: center;
 }
-#containerProductos #productos img {
+#containerProductos .productos img {
   width: 190px;
   height: 130px;
 }
-#containerProductos #productos a {
+#containerProductos .productos a {
   text-decoration: none;
   color: rgb(250, 147, 12);
   font-weight: 600;
 }
-#containerProductos #productos .itemProductos p {
+#containerProductos .productos .itemProductos p {
   color: rgb(250, 147, 12);
 }
-#containerProductos #productos .itemProductos {
+#containerProductos .productos .itemProductos {
   text-align: center;
   padding: 10px;
   transition: all 0.5s;
 }
-#containerProductos #productos .itemProductos:hover {
+#containerProductos .productos .itemProductos:hover {
   background-color: rgb(180, 180, 180);
   border-radius: 0.5em;
 }
@@ -132,40 +132,40 @@ h1 {
 #containerPromociones .header {
   grid-area: encabezado;
 }
-#containerPromociones #promocionados {
+#containerPromociones .promocionados {
   grid-area: titular;
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-#containerPromociones #promocionados p {
+#containerPromociones .promocionados p {
   color: rgb(255, 102, 0);
   font-weight: 600;
   margin: 2%;
   font-size: large;
 }
-#containerPromociones #introPromociones {
+#containerPromociones .introPromociones {
   grid-area: promocionados;
 }
-#containerPromociones #introPromociones img {
+#containerPromociones .introPromociones img {
   width: 250px;
   padding: 10px;
 }
-#containerPromociones #introPromociones img:hover {
+#containerPromociones .introPromociones img:hover {
   border-radius: 25px;
   border: 5px solid rgb(250, 147, 12);
 }
-#containerPromociones #introPromociones .itemsDestacados {
+#containerPromociones .introPromociones .itemsDestacados {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-#containerPromociones #introPromociones .itemsPromocionados {
+#containerPromociones .introPromociones .itemsPromocionados {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-#containerPromociones #introPromociones h4 {
+#containerPromociones .introPromociones h4 {
   text-align: center;
   margin: 2%;
   color: rgb(250, 147, 12);
@@ -188,7 +188,7 @@ h1 {
 #containerSobreNosotros .header {
   grid-area: encabezado;
 }
-#containerSobreNosotros #introSobreNosotros {
+#containerSobreNosotros .introSobreNosotros {
   grid-area: titular;
   display: flex;
   flex-direction: column;
@@ -196,7 +196,7 @@ h1 {
   align-items: center;
   text-align: center;
 }
-#containerSobreNosotros #introSobreNosotros p {
+#containerSobreNosotros .introSobreNosotros p {
   margin-top: 2%;
   color: rgb(250, 147, 12);
   width: 50%;

@@ -1,6 +1,3 @@
-$vista:mobile;
-
-@if $vista==mobile {
     @media (min-width: 577px) and (max-width: 768px) {
 
     #productos img {
@@ -12,7 +9,7 @@ $vista:mobile;
     }
 
 }
-}
+
  
 @media (min-width: 1200px) {
 
