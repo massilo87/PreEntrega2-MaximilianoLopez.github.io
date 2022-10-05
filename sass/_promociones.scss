@@ -1,0 +1,77 @@
+#containerPromociones {
+    height: 100vh;
+    background-repeat: repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 2fr auto;
+    gap: 20px;
+    grid-template-areas:
+        "encabezado"
+        "titular"
+        "promocionados"
+        "pie";
+
+    .header {
+        grid-area: encabezado;
+    }
+
+    .promocionados {
+        grid-area: titular;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 500px;
+        background-image: url("../img/bg_4.jpg");
+        background-size: cover;
+        background-position: center;
+        h1 {
+            @include titularPrincipal
+        }
+
+        p {
+            color: $colorTexto;
+            font-weight: 600;
+            margin: 2%;
+            font-size: x-large;
+        }
+
+    }
+
+    .introPromociones {
+        grid-area: promocionados;
+        
+        img {
+            width: 330px;
+            padding: 10px;
+            
+            &:hover {
+                border-radius: 25px;
+            }
+        }
+
+        .itemsDestacados {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+
+        .itemsPromocionados {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;            
+        }
+
+        h4 {
+            text-align: center;
+            margin: 2%;
+            color: $colorPrincipal;
+            font-weight: 600;
+        }
+
+    }
+
+    footer {
+        grid-area: pie;
+
+    }
+}

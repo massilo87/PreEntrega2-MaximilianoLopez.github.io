@@ -1,0 +1,49 @@
+#containerHome {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 2fr 2fr auto;
+    gap: 15px;
+    grid-template-areas:
+        "encabezado"
+        "titular"
+        "titular2"
+        "impresion"
+        "pie";
+
+    .header {
+        grid-area: encabezado;
+    }
+
+    .introHome {
+        grid-area: titular;
+        text-align: center;
+        h1 {
+            @include titularPrincipal
+        }
+    }
+
+    .sectionHome {
+        grid-area: titular2;
+        background-image: url("../img/Impresion-3D.jpeg");
+        background-position: center;
+        opacity: 0.5;
+        text-align: center;
+        height: 300px;
+
+        h2 {
+            margin-top: 1%;
+            color: rgb(255, 255, 255);
+            text-shadow: black 0.2em 0.2em;
+        }
+    }
+
+    .contenedorimpresion {
+        grid-area: impresion;
+    }
+
+    footer {
+        grid-area: pie;
+
+    }
+}

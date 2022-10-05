@@ -1,0 +1,76 @@
+#containerSobreNosotros {
+    height: 100vh;
+    background-repeat: repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2fr 1fr auto auto;
+    gap: 15px;
+    grid-template-areas:
+        "encabezado"
+        "titular"
+        "ubicacion"
+        "pie";
+
+    .header {
+        grid-area: encabezado;
+    }
+
+    .introSobreNosotros {
+        grid-area: titular;
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        align-items: center;
+        text-align: center;
+        h1 {
+            @include titularPrincipal
+        }
+
+        p {
+            margin-top: 2%;
+            color: $colorPrincipal;
+            width: 50%;
+
+            font: {
+                size: large;
+                weight: 700;
+            }
+        }
+    }
+
+    .ubicacion {
+        grid-area: ubicacion;
+        text-align: center;
+
+        iframe {
+            width: 50%;
+            height: auto;
+
+        }
+
+        h6 {
+            color: $colorTexto;
+            width: 100%;
+            padding: 1%;
+
+            font: {
+                size: large;
+                weight: 600;
+            }
+        }
+
+        .zorro {
+            margin-top: 5%;
+
+            img {
+                width: 25%;
+                height: auto;
+            }
+        }
+    }
+
+    footer {
+        grid-area: pie;
+
+    }
+}

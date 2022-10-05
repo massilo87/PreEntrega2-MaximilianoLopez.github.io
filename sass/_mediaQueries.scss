@@ -37,6 +37,10 @@
         width: 250px;
         padding: 5px;
     }
+    #containerProductos .tituloProductos {
+        justify-content: center;
+        align-items: start;
+    }
 }
 
 @media (min-width: 1200px) {

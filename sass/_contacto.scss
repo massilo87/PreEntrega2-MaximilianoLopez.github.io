@@ -1,0 +1,28 @@
+#containerContacto {
+    height: 100vh;
+    background-repeat: repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 2fr auto;
+    gap: 15px;
+    grid-template-areas:
+        "encabezado"
+        "titular"
+        "formulario"
+        "pie";
+
+    .header {
+        grid-area: encabezado;
+    }
+    .tituloContacto {
+        grid-area: titular;
+        text-align: center;
+        @include titularPrincipal;
+    }
+    #formulario {
+        grid-area: formulario;
+    }
+    footer {
+        grid-area: pie;
+    }
+}
