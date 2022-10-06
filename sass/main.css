@@ -21,11 +21,6 @@ body {
   height: 30px;
 }
 
-/*h1 {
-    font-size: xx-large;
-    font-weight: 800;
-    color: $colorPrincipal;
-}*/
 .nav-link {
   border-radius: 20px;
 }
@@ -43,9 +38,6 @@ body {
 }
 #containerHome .introHome {
   grid-area: titular;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   text-align: center;
 }
 #containerHome .introHome h1 {
@@ -92,7 +84,7 @@ body {
   justify-content: end;
   align-items: center;
   height: 400px;
-  background-image: url("../img/bg_1.webp");
+  background-image: url("../img/bg_5.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -175,7 +167,6 @@ body {
 }
 #containerPromociones .introPromociones img:hover {
   border-radius: 25px;
-  /*border: 5px solid $colorPrincipal;*/
 }
 #containerPromociones .introPromociones .itemsDestacados {
   display: flex;
@@ -248,7 +239,7 @@ body {
   margin-top: 5%;
 }
 #containerSobreNosotros .ubicacion .zorro img {
-  width: 25%;
+  width: 15%;
   height: auto;
 }
 #containerSobreNosotros footer {

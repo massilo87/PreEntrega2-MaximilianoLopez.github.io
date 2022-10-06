@@ -1,7 +1,4 @@
-// Variables
-
-$colorPrincipal: rgb(250, 147, 12);
-$colorTexto:  rgb(255, 102, 0);
+@import "variables";
 
 /* Reset */
 
@@ -30,14 +27,14 @@ body {
     height: 30px;
 }
 
+.nav-link {
+    border-radius: 20px;
+}
+
 @mixin titularPrincipal {
     font-size: xx-large;
     font-weight: 800;
     color: $colorPrincipal;
-}
-
-.nav-link {
-    border-radius: 20px;
 }
 
 @import "home";
