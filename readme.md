@@ -2,8 +2,10 @@
 ## Comision 33040 DW CODERHOUSE 
 ---
 **Entrega final proyecto DW**
+
 **web dedicada a emprendimiento de impresiones 3d en PLA**
-___web site con 5 secciones__
+
+___Web site con 5 secciones__
 + Home
 + Productos
 + Promociones
