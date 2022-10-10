@@ -5,7 +5,7 @@
 
 **web dedicada a emprendimiento de impresiones 3d en PLA**
 
-___Web site con 5 secciones__
+___Web site con 5 secciones___
 + Home
 + Productos
 + Promociones
