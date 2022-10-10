@@ -25,6 +25,7 @@
         background-image: url("../img/bg_5.jpg");
         background-size: cover;
         background-position: center;
+
         h1 {
             @include titularPrincipal
         }

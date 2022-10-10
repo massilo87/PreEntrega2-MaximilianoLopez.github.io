@@ -18,6 +18,7 @@
     .introHome {
         grid-area: titular;
         text-align: center;
+
         h1 {
             @include titularPrincipal
         }

@@ -14,14 +14,17 @@
     .header {
         grid-area: encabezado;
     }
+
     .tituloContacto {
         grid-area: titular;
         text-align: center;
         @include titularPrincipal;
     }
+
     #formulario {
         grid-area: formulario;
     }
+
     footer {
         grid-area: pie;
     }

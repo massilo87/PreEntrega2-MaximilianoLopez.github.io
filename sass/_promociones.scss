@@ -24,6 +24,7 @@
         background-image: url("../img/bg_4.jpg");
         background-size: cover;
         background-position: center;
+
         h1 {
             @include titularPrincipal
         }
@@ -39,11 +40,11 @@
 
     .introPromociones {
         grid-area: promocionados;
-        
+
         img {
             width: 330px;
             padding: 10px;
-            
+
             &:hover {
                 border-radius: 25px;
             }
@@ -58,7 +59,7 @@
         .itemsPromocionados {
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-evenly;            
+            justify-content: space-evenly;
         }
 
         h4 {

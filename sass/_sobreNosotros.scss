@@ -22,6 +22,7 @@
         margin: 2%;
         align-items: center;
         text-align: center;
+
         h1 {
             @include titularPrincipal
         }
@@ -33,7 +34,7 @@
 
             font: {
                 size: large;
-                weight: 700;
+                weight: 800;
             }
         }
     }
