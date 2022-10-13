@@ -285,7 +285,7 @@ body {
   grid-area: formulario;
 }
 #containerContacto .formulario .botonFormulario {
-  background-color: rgb(255, 147, 12);
+  background-color: rgb(250, 147, 12);
 }
 #containerContacto footer {
   grid-area: pie;
