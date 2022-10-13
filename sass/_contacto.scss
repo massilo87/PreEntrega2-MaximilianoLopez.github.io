@@ -21,8 +21,12 @@
         @include titularPrincipal;
     }
 
-    #formulario {
+    .formulario {
         grid-area: formulario;
+
+        .botonFormulario {
+            background-color: rgb(2250, 147, 12);
+        }
     }
 
     footer {

@@ -44,9 +44,10 @@
         img {
             width: 330px;
             padding: 10px;
+            transition: 0.5s;
 
             &:hover {
-                border-radius: 25px;
+                border-radius: 45px;
             }
         }
 
@@ -73,6 +74,5 @@
 
     footer {
         grid-area: pie;
-
     }
 }
