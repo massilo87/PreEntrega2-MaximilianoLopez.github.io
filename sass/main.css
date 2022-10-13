@@ -41,22 +41,32 @@ body {
   text-align: center;
 }
 #containerHome .introHome h1 {
-  font-size: xx-large;
+  font-size: 2rem;
   font-weight: 800;
   color: rgb(250, 147, 12);
 }
 #containerHome .sectionHome {
   grid-area: titular2;
-  background-image: url("../img/Impresion-3D.jpeg");
-  background-position: center;
-  opacity: 0.5;
   text-align: center;
-  height: 300px;
+  height: 400px;
+}
+#containerHome .sectionHome::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background: url("../img/Impresion-3D.jpeg"), linear-gradient(319deg, #f80202 0%, #f87102 57.66%, #fff23d 100%);
+  background-blend-mode: multiply;
+  background-position: center;
+  opacity: 0.7;
+  left: 0;
 }
 #containerHome .sectionHome h2 {
   margin-top: 1%;
   color: rgb(255, 255, 255);
   text-shadow: black 0.2em 0.2em;
+  position: relative;
+  top: 42%;
 }
 #containerHome .contenedorimpresion {
   grid-area: impresion;
@@ -89,7 +99,7 @@ body {
   background-position: center;
 }
 #containerProductos .tituloProductos h1 {
-  font-size: xx-large;
+  font-size: 2rem;
   font-weight: 800;
   color: rgb(250, 147, 12);
 }
@@ -148,7 +158,7 @@ body {
   background-position: center;
 }
 #containerPromociones .promocionados h1 {
-  font-size: xx-large;
+  font-size: 2rem;
   font-weight: 800;
   color: rgb(250, 147, 12);
 }
@@ -156,7 +166,7 @@ body {
   color: rgb(255, 102, 0);
   font-weight: 600;
   margin: 2%;
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 #containerPromociones .introPromociones {
   grid-area: promocionados;
@@ -209,7 +219,7 @@ body {
   text-align: center;
 }
 #containerSobreNosotros .introSobreNosotros h1 {
-  font-size: xx-large;
+  font-size: 2rem;
   font-weight: 800;
   color: rgb(250, 147, 12);
 }
@@ -217,7 +227,7 @@ body {
   margin-top: 2%;
   color: rgb(250, 147, 12);
   width: 50%;
-  font-size: large;
+  font-size: 1.2rem;
   font-weight: 800;
 }
 #containerSobreNosotros .ubicacion {
@@ -232,7 +242,7 @@ body {
   color: rgb(255, 102, 0);
   width: 100%;
   padding: 1%;
-  font-size: large;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 #containerSobreNosotros .ubicacion .zorro {
@@ -261,7 +271,7 @@ body {
 #containerContacto .tituloContacto {
   grid-area: titular;
   text-align: center;
-  font-size: xx-large;
+  font-size: 2rem;
   font-weight: 800;
   color: rgb(250, 147, 12);
 }
@@ -310,6 +320,9 @@ body {
   #containerProductos .tituloProductos {
     justify-content: center;
     align-items: start;
+  }
+  html {
+    font-size: 75%;
   }
 }
 @media (min-width: 1200px) {
